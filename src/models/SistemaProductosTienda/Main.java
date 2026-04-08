@@ -40,7 +40,7 @@ public class Main {
                         encontrado.setCantidad(encontrado.getCantidad() + cant);
                     } else {
                         System.out.print("Nombre: "); String nom = leer.next();
-                        System.out.print("Precio: "); double pre = leer.nextDouble();
+                        System.out.print("Precio: "); float pre = leer.nextFloat();
                         System.out.print("Cantidad: "); int cant = leer.nextInt();
                         inventario.add(new producto(cod, nom, pre, cant));
                     }
@@ -65,7 +65,7 @@ public class Main {
             } else if (opcion == 3) {
                 for (   producto p : inventario) System.out.println(p.mostrarProducto());
             } else if (opcion == 4) {
-                double total = 0;
+                float total = 0;
                 for (producto p : inventario) total += p.calcularMonto();
                 System.out.println("Valor total: $" + total);
             }
