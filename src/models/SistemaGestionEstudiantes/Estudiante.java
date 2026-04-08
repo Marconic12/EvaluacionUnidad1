@@ -6,8 +6,6 @@ public class Estudiante {
     private float promedio;
     private Carrera Carrera;
 
-    //Constructores
-
 
     public Estudiante() {
     }
@@ -21,9 +19,9 @@ public class Estudiante {
 
     public boolean aprobar() {
         if (promedio >= 70) {
-            return true;  // Devuelve verdadero si es mayor o igual a 70
+            return true;
         } else {
-            return false; // Devuelve falso si es menor
+            return false;
         }
     }
 
@@ -61,7 +59,7 @@ public class Estudiante {
 
     @Override
     public String toString() {
-        // Usamos un if simple para el estado
+
         String estado;
         if (this.promedio >= 70) {
             estado = "Aprobado";
