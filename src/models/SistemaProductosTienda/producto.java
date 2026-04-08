@@ -4,7 +4,7 @@ public class producto{
     //Crearemos los atributos de la clase producto
     private String codigo;
     private String nombre;
-    private double precio;
+    private float precio;
     private int cantidad;
 
     //ahora crearemos los constructores - El primero vacio y el siguiente todos
@@ -12,7 +12,7 @@ public class producto{
     public producto() {
     }
 
-    public producto(String codigo, String nombre, double precio, int cantidad) {
+    public producto(String codigo, String nombre, float precio, int cantidad) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
@@ -37,11 +37,11 @@ public class producto{
         this.nombre = nombre;
     }
 
-    public double getPrecio() {
+    public float getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(float precio) {
         this.precio = precio;
     }
 
