@@ -1,6 +1,6 @@
-package modelos;
+package models.SistemaProductosTienda;
 
-public class Producto {
+public class producto{
     //Crearemos los atributos de la clase producto
     private String codigo;
     private String nombre;
@@ -9,10 +9,10 @@ public class Producto {
 
     //ahora crearemos los constructores - El primero vacio y el siguiente todos
 
-    public Producto() {
+    public producto() {
     }
 
-    public Producto(String codigo, String nombre, double precio, int cantidad) {
+    public producto(String codigo, String nombre, double precio, int cantidad) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
